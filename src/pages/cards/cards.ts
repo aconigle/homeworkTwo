@@ -32,15 +32,15 @@ export class CardsPage {
         },
         {
             imgPath: "bighornWyoming.jpg",
-            title: "Bighorn National Forest, Wyoming",
-            desc: "Morbi feugiat lacinia lectus. Nunc molestie interdum sapien, vel viverra est tempus ac.",
+            title: "Bighorn National Forest",
+            desc: "Morbi feugiat lacinia lectus. Nunc molestie interdum sapien, vel viverra est tempus ac.Nullam id feugiat risus. Proin id faucibus nulla, quis hendrerit eros.",
             favorited: false,
             shared: false
         },
         {
             imgPath: "borabora.jpg",
-            title: "Bora Bora Beach Paradise",
-            desc: "Morbi feugiat lacinia lectus. Nunc molestie interdum sapien, vel viverra est tempus ac.",
+            title: "Bora Bora",
+            desc: "Morbi feugiat lacinia lectus. Nunc molestie interdum sapien, vel viverra est tempus ac.Nullam id feugiat risus. Proin id faucibus nulla, quis hendrerit eros.",
             favorited: false,
             shared: false
         },

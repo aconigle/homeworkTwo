@@ -15,7 +15,7 @@
 <!--need fav share(need outline to solid state) & delete (must delete)-->
 <ion-content padding>
     <p>My cards feature {{cards.length}} destinations.</p>
-    <ion-card style="width:300px; height:525px" *ngFor="let card of cards">
+    <ion-card style="width:300px; height:500px" *ngFor="let card of cards">
         <img src="assets/images/{{card.imgPath}}"/>
         <ion-card-content>
             <ion-card-title>
@@ -31,15 +31,15 @@
                     &nbsp; Fav
                 </button>
             </ion-col>
-            <ion-col>
+            <ion-col style="margin-left:-10px;">
                 <button ion-button clear start (click)="clickShare(card)">
-                    <ion-icon [name]="(card.shared) ? 'share':'share-outline'"></ion-icon>
+                    <ion-icon [name]="(card.shared) ? 'ios-share':'ios-share-outline'"></ion-icon>
                     &nbsp; Share
                 </button>
             </ion-col>
-            <ion-col>
+            <ion-col style="margin-left:-10px;">
                 <button ion-button clear start (click)="deleteCards(card)">
-                    <ion-icon color="danger" name="trash"></ion-icon> &nbsp; Delete
+                    <ion-icon name="trash"></ion-icon> &nbsp; Delete
                 </button>
             </ion-col>
         </ion-row>
