@@ -1,0 +1,47 @@
+<!--
+  Generated template for the CardsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Vicarious Travel Forum</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+<!--need fav share(need outline to solid state) & delete (must delete)-->
+<ion-content padding>
+    <p>My cards feature {{cards.length}} destinations.</p>
+    <ion-card style="width:300px; height:375px" *ngFor="let card of cards">
+        <img src="assets/image/{{card.imgPath}}"/>
+        <ion-card-content>
+            <ion-card-title>
+                {{card.title}}
+            </ion-card-title>
+            <p>{{card.desc}}</p>
+        </ion-card-content>
+        <ion-row>
+            <ion-col>
+                <button ion-button clear start (click)="clickFav(card)">
+
+                    <ion-icon [name]="(card.favorited) ? 'heart': 'heart-outline'"></ion-icon>
+                    &nbsp; Fav
+                </button>
+            </ion-col>
+            <ion-col>
+                <button ion-button clear start (click)="clickShare(card)">
+                    <ion-icon [name]="(card.shared) ? 'share':'share-outline'"></ion-icon>
+                    &nbsp; Share
+                </button>
+            </ion-col>
+            <ion-col>
+                <button ion-button clear start (click)="deleteCards(card)">
+                    <ion-icon color="danger" name="trash"></ion-icon> &nbsp; Delete
+                </button>
+            </ion-col>
+        </ion-row>
+    </ion-card>
+</ion-content>
